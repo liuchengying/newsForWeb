@@ -36,10 +36,10 @@ export default {
 
       }).catch((err) => {
 
-        if(err.data.error == 'nodata'){
-           alert('网络故障，请后退后重新进入');
-         }
-
+        // if(err.data.error == 'nodata'){
+        //    alert('网络故障，请后退后重新进入');
+        //  }
+console.log(err);
       })
     }
   },
@@ -57,7 +57,7 @@ export default {
 
 <style scoped>
 *{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .daohangtiao{
@@ -75,10 +75,10 @@ export default {
   margin-top: 120px;
   height: auto;
   background-color: red;
-  background-color: #efefef;
+  background-color: #ffffff;
   position: absolute;
   left: 0px;
-  padding-bottom: 300px;
+  /*padding-bottom: 300px;*/
 
 }
 .title{
@@ -87,7 +87,7 @@ export default {
   font-size: 70px;
   width: 100%;
   height: 220px;
-  background-color: #efefef;
+  background-color: #ffffff;
   line-height: 110px;
 }
 .context-time{
